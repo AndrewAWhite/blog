@@ -1,3 +1,13 @@
 baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+languageCode = "en-gb"
+title = "Andrew's Blog"
+theme = "tailwind-theme"
+
+[taxonomies]
+year = "year"
+month = "month"
+
+[permalinks]
+post = "/posts/:year/:month/:slug/"
+year = "/posts/:slug/"
+month = "/posts/:slug/"
