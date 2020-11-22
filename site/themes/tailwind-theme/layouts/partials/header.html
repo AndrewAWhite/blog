@@ -1,33 +1,19 @@
 <header class="w-full px-4 pt-4">
-    {{/*  CSS functionality for menu toggle  */}}
-    <style type="text/css">
-        input#nav-toggle:checked~label#show-button {
-            display: none;
-        }
 
-        input#nav-toggle:checked~label#hide-button {
-            display: flex;
-        }
-
-        input#nav-toggle:checked~#nav-menu {
-            display: block;
-        }
-    </style>
-
-    <nav class="fixed bg-white inset-x-0 top-0 w-screen h-10 shadow flex">
-        <a href="{{ .Site.Home.Permalink }}" class="flex items-center text-gray-700 font-bold">
+    <nav class="fixed bg-gray-700 text-gray-500 inset-x-0 top-0 w-screen h-10 shadow flex">
+        <a href="{{ .Site.Home.Permalink }}" class="flex items-center no-underline text-gray-500 hover:text-blue-400 font-bold">
             {{ .Site.Title }}
         </a>
 
-        <ul id="nav-menu" class="">
+        <ul id="nav-menu" class="flex items-center text-gray-700 font-bold">
             {{ with .Site.GetPage "/about" }}
             <li>
-                <a href="{{ .Permalink }}" class="text-gray-500 hover:text-blue-400">{{ .Title }}</a>
+                <a href="{{ .Permalink }}" class="text-gray-500 no-underline hover:text-blue-400">{{ .Title }}</a>
             </li>
             {{ end }}
             {{ range .Site.Sections }}
             <li>
-                <a href="{{ .Permalink }}" class="text-gray-500 hover:text-blue-400">{{ .Title }}</a>
+                <a href="{{ .Permalink }}" class="text-gray-500 ml-6 no-underline hover:text-blue-400">{{ .Title }}</a>
             </li>
             {{ end }}
         </ul>

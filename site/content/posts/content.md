@@ -1,6 +1,5 @@
 ---
 title: "Hello Hugo!"
-slug: "content-slug-1"
 description: "Saying 'Hello' from Hugo"
 date: "2014-09-01"
 year: "2014"
@@ -33,9 +32,16 @@ or through [Google](https://google.com/).
 There are some *easy* examples for styling, though. I can't **emphasize** that enough.
 Creating [links](https://google.com/) or 
 
+# Title1
+
+## Title2
+
+### Title 3
+
 ```python
 def isfunction(p):
     # This is a function
+    # new line
     return 1
 ``` 
 

@@ -19,13 +19,10 @@
     {{- if .Site.IsServer }}
     <link rel="stylesheet" href="{{ $styles.RelPermalink }}">
     {{ else }}
-        {{- $styles := $styles| minify | fingerprint | resources.PostProcess -}}
+    {{ $styles := $styles| minify | fingerprint | resources.PostProcess }}
     <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}">
     {{ end -}}
     <link rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/styles/default.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/highlight.min.js"></script>
-    <!-- and it's easy to individually load additional languages -->
-    <script charset="UTF-8"
-    src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/languages/go.min.js"></script>
 </head>
