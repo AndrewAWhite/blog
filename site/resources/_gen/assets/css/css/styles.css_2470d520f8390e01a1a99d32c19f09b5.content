@@ -594,14 +594,6 @@ video {
   color: blue;
 }
 
-h1{
-  font-size: x-large;
-}
-
-a{
-  text-decoration: underline;
-}
-
 /* Tailwind's utility classes - generated based on config file */
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]) {

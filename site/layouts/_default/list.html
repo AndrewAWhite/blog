@@ -1,22 +1,142 @@
 
 {{ define "main" }}
-<main>
-    <article class="ml-auto mr-auto text-center">
-        <header>
-            <h1>{{.Title}}</h1>
-            {{.Content}}
-        </header>
-        <!-- "{{.Content}}" pulls from the markdown content of the corresponding _index.md -->
-       
-    </article>
-    <ul class="w-6/12 ml-auto mr-auto">
-    <!-- Ranges through content/posts/*.md -->
-    {{ range .Pages }}
-        <li>
-            <a class="text-4xl text-gray-400 underline" href="{{.Permalink}}">{{.Title}}</a><br>
-            {{.Date.Format "2006-01-02"}}
-        </li>
-    {{ end }}
-    </ul>
+<main class="w-11/12 ml-auto mr-auto">
+    <body class="bg-gray-100 text-gray-700">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        {{ range .Pages }}
+            <div class="bg-gray-800 overflow-hidden border-gray-400 m-1 p-2">
+                <div class="m-2 text-justify text-sm">
+                    <p class="text-right text-s">{{.Date.Format "2006-01-02"}}</p>
+                    <h2 class="font-bold text-lg h-2 mb-8">{{.Title}}</h2>
+                    <p class="text-m leading-4">
+                        {{ .Summary }}                    
+                    </p>
+                </div>
+                <div class="w-full text-right mt-4">
+                    <a class="uppercase font-bold text-sm hover:text-white text-green-700" href="{{ .Permalink }}">Read More</a>
+                </div>
+            </div>
+            
+            <div class="bg-gray-800 overflow-hidden border-gray-400 m-1 p-2">
+                <div class="m-2 text-justify text-sm">
+                    <p class="text-right text-s">{{.Date.Format "2006-01-02"}}</p>
+                    <h2 class="font-bold text-lg h-2 mb-8">{{.Title}}</h2>
+                    <p class="text-m leading-4">
+                        {{ .Summary }}                    
+                    </p>
+                </div>
+                <div class="w-full text-right mt-4">
+                    <a class="uppercase font-bold text-sm hover:text-white text-green-700" href="{{ .Permalink }}">Read More</a>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 overflow-hidden border-gray-400 m-1 p-2">
+                <div class="m-2 text-justify text-sm">
+                    <p class="text-right text-s">{{.Date.Format "2006-01-02"}}</p>
+                    <h2 class="font-bold text-lg h-2 mb-8">{{.Title}}</h2>
+                    <p class="text-m leading-4">
+                        {{ .Summary }}                    
+                    </p>
+                </div>
+                <div class="w-full text-right mt-4">
+                    <a class="uppercase font-bold text-sm hover:text-white text-green-700" href="{{ .Permalink }}">Read More</a>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 overflow-hidden border-gray-400 m-1 p-2">
+                <div class="m-2 text-justify text-sm">
+                    <p class="text-right text-s">{{.Date.Format "2006-01-02"}}</p>
+                    <h2 class="font-bold text-lg h-2 mb-8">{{.Title}}</h2>
+                    <p class="text-m leading-4">
+                        {{ .Summary }}                    
+                    </p>
+                </div>
+                <div class="w-full text-right mt-4">
+                    <a class="uppercase font-bold text-sm hover:text-white text-green-700" href="{{ .Permalink }}">Read More</a>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 overflow-hidden border-gray-400 m-1 p-2">
+                <div class="m-2 text-justify text-sm">
+                    <p class="text-right text-s">{{.Date.Format "2006-01-02"}}</p>
+                    <h2 class="font-bold text-lg h-2 mb-8">{{.Title}}</h2>
+                    <p class="text-m leading-4">
+                        {{ .Summary }}                    
+                    </p>
+                </div>
+                <div class="w-full text-right mt-4">
+                    <a class="uppercase font-bold text-sm hover:text-white text-green-700" href="{{ .Permalink }}">Read More</a>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 overflow-hidden border-gray-400 m-1 p-2">
+                <div class="m-2 text-justify text-sm">
+                    <p class="text-right text-s">{{.Date.Format "2006-01-02"}}</p>
+                    <h2 class="font-bold text-lg h-2 mb-8">{{.Title}}</h2>
+                    <p class="text-m leading-4">
+                        {{ .Summary }}                    
+                    </p>
+                </div>
+                <div class="w-full text-right mt-4">
+                    <a class="uppercase font-bold text-sm hover:text-white text-green-700" href="{{ .Permalink }}">Read More</a>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 overflow-hidden border-gray-400 m-1 p-2">
+                <div class="m-2 text-justify text-sm">
+                    <p class="text-right text-s">{{.Date.Format "2006-01-02"}}</p>
+                    <h2 class="font-bold text-lg h-2 mb-8">{{.Title}}</h2>
+                    <p class="text-m leading-4">
+                        {{ .Summary }}                    
+                    </p>
+                </div>
+                <div class="w-full text-right mt-4">
+                    <a class="uppercase font-bold text-sm hover:text-white text-green-700" href="{{ .Permalink }}">Read More</a>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 overflow-hidden border-gray-400 m-1 p-2">
+                <div class="m-2 text-justify text-sm">
+                    <p class="text-right text-s">{{.Date.Format "2006-01-02"}}</p>
+                    <h2 class="font-bold text-lg h-2 mb-8">{{.Title}}</h2>
+                    <p class="text-m leading-4">
+                        {{ .Summary }}                    
+                    </p>
+                </div>
+                <div class="w-full text-right mt-4">
+                    <a class="uppercase font-bold text-sm hover:text-white text-green-700" href="{{ .Permalink }}">Read More</a>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 overflow-hidden border-gray-400 m-1 p-2">
+                <div class="m-2 text-justify text-sm">
+                    <p class="text-right text-s">{{.Date.Format "2006-01-02"}}</p>
+                    <h2 class="font-bold text-lg h-2 mb-8">{{.Title}}</h2>
+                    <p class="text-m leading-4">
+                        {{ .Summary }}                    
+                    </p>
+                </div>
+                <div class="w-full text-right mt-4">
+                    <a class="uppercase font-bold text-sm hover:text-white text-green-700" href="{{ .Permalink }}">Read More</a>
+                </div>
+            </div>
+
+            <div class="bg-gray-800 overflow-hidden border-gray-400 m-1 p-2">
+                <div class="m-2 text-justify text-sm">
+                    <p class="text-right text-s">{{.Date.Format "2006-01-02"}}</p>
+                    <h2 class="font-bold text-lg h-2 mb-8">{{.Title}}</h2>
+                    <p class="text-m leading-4">
+                        {{ .Summary }}                    
+                    </p>
+                </div>
+                <div class="w-full text-right mt-4">
+                    <a class="uppercase font-bold text-sm hover:text-white text-green-700" href="{{ .Permalink }}">Read More</a>
+                </div>
+            </div>
+
+        {{ end }}
+    </div>
+</body>
 </main>
 {{ end }}

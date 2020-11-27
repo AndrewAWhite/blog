@@ -1,21 +1,27 @@
 <header class="w-full px-4 pt-4">
 
-    <nav class="fixed bg-gray-700 text-gray-500 inset-x-0 top-0 w-screen h-10 shadow flex">
-        <a href="{{ .Site.Home.Permalink }}" class="flex items-center no-underline text-gray-500 hover:text-blue-400 font-bold">
+    <nav class="fixed bg-gray-800 text-gray-500 inset-x-0 top-0 w-screen h-10 shadow flex">
+        <a href="{{ .Site.Home.Permalink }}" class="flex ml-2 items-center no-underline text-gray-500 hover:text-blue-400 font-bold">
             {{ .Site.Title }}
         </a>
-
-        <ul id="nav-menu" class="flex items-center text-gray-700 font-bold">
+        <ul class="hidden ml-10 md:inline-flex items-center">
             {{ with .Site.GetPage "/about" }}
-            <li>
-                <a href="{{ .Permalink }}" class="text-gray-500 no-underline hover:text-blue-400">{{ .Title }}</a>
+            <li class="px-2 md:px-2">
+              <a href="{{ .Permalink }}" class="font-semibold no-underline hover:text-blue-400 "> {{ .Title }} </a>
             </li>
             {{ end }}
             {{ range .Site.Sections }}
-            <li>
-                <a href="{{ .Permalink }}" class="text-gray-500 ml-6 no-underline hover:text-blue-400">{{ .Title }}</a>
-            </li>
+            <li class="px-2 md:px-2">
+                <a href="{{ .Permalink }}" class="font-semibold no-underline hover:text-blue-400 "> {{ .Title }} </a>
+              </li>
             {{ end }}
-        </ul>
+            <li class="px-2 md:px-2">
+              <a href="" class="font-semibold no-underline hover:text-blue-400 "> About </a>
+            </li>
+            <li class="px-2 md:px-2">
+              <a href="" class="font-semibold no-underline hover:text-blue-400 "> Contact </a>
+            </li>
+            </li>
+          </ul>
     </nav>
 </header>
