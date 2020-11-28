@@ -1,0 +1,15 @@
+{
+    "name": "pubsubpost",
+    "version": "0.0.1",
+    "description": "notes to self by Andrew White",
+    "repository": "https://github.com/AndrewAWhite/blog",
+    "license": "MIT",
+    "devDependencies": {
+        "@fullhuman/postcss-purgecss": "^3.0.0",
+        "autoprefixer": "^9.8.6",
+        "postcss": "^8.1.7",
+        "postcss-cli": "^8.0.0",
+        "postcss-import": "^13.0.0",
+        "tailwindcss": "^2.0.1"
+    }
+}

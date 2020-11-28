@@ -22,8 +22,5 @@
         "> 1%",
         "maintained node versions",
         "not dead"
-    ],
-    "dependencies": {
-        "highlightjs": "^9.16.2"
-    }
+    ]
 }
