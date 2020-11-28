@@ -1,0 +1,18 @@
+User-agent: *
+
+
+Disallow: /posts/2014/
+
+Disallow: /posts/content-slug-2/
+
+Disallow: /
+
+Disallow: /posts/
+
+Disallow: /year/
+
+Disallow: /posts/content/
+
+Disallow: /posts/2014/09/
+
+Disallow: /month/
