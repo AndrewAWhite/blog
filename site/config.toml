@@ -1,6 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "http://localhost/"
 languageCode = "en-gb"
-title = "Andrew's Blog"
+title = "Notes to Self"
 theme = "tailwind-theme"
 
 [taxonomies]
@@ -11,3 +11,17 @@ month = "month"
 post = "/posts/:year/:month/:slug/"
 year = "/posts/:slug/"
 month = "/posts/:slug/"
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = true
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "native"
+    tabWidth = 4

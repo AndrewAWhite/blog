@@ -1,0 +1,22 @@
+{{ $htmlTable := .Inner | markdownify }}
+{{ $tableclass := "table-auto w-full text-left border" }}
+{{ $tdclass := "border"}}
+{{ $old := "<table>" }}
+{{ $new := printf "<table class=\"%s\">" $tableclass }}
+{{ $oldtd1 := "<td>"}}
+{{ $newtd1 := printf "<td class=\"%s\">" $tdclass }}
+{{ $oldtd2 := "<td "}}
+{{ $newtd2 := printf "<td class=\"%s\" " $tdclass }}
+{{ $oldthead1 := "<thead>"}}
+{{ $newthead1 := printf "<thead class=\"%s\">" $tdclass }}
+{{ $oldthead2 := "<th>"}}
+{{ $newthead2 := printf "<th class=\"%s\">" $tdclass }}
+{{ $oldthead3 := "<th "}}
+{{ $newthead3 := printf "<th class=\"%s\" " $tdclass }}
+{{ $htmlTable := replace $htmlTable $old $new }}
+{{ $htmlTable := replace $htmlTable $oldtd1 $newtd1}}
+{{ $htmlTable := replace $htmlTable $oldtd2 $newtd2}}
+{{ $htmlTable := replace $htmlTable $oldthead1 $newthead1}}
+{{ $htmlTable := replace $htmlTable $oldthead2 $newthead2}}
+{{ $htmlTable := replace $htmlTable $oldthead3 $newthead3}}
+{{ $htmlTable | safeHTML }}

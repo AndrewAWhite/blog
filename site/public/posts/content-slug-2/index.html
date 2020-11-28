@@ -3,48 +3,37 @@
     <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hello Hugo! copy - Andrew&#39;s Blog</title>
+    <title>Hello Hugo! copy - Notes to Self</title>
     <meta name="description" content="Saying &#39;Hello&#39; from Hugo again" />
     <meta name="generator" content="Hugo 0.78.2" />
     
-    <link rel="stylesheet" href="http://example.org/css/styles.min.e04f8778a967981fd45ad0b8632b951f8f5771590cb282b45980744f5425bac0.css" integrity="sha256-4E+HeKlnmB/UWtC4YyuVH49XcVkMsoK0WYB0T1QlusA=">
-    <link rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/styles/default.min.css">
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/highlight.min.js"></script>
-</head>
-    <body class="flex flex-col min-h-screen"><header class="w-full px-4 pt-4">
-    
-    <style type="text/css">
-        input#nav-toggle:checked~label#show-button {
-            display: none;
-        }
+    <link rel="stylesheet" href="http://localhost/css/styles.min.b4d64cd5424e0f601a2fa1df44cb4fb803d01b5b9ca8ac76d1441c60851c0dee.css" integrity="sha256-tNZM1UJOD2AaL6HfRMtPuAPQG1ucqKx20UQcYIUcDe4=">
+    </head>
+    <body class="flex justify-center flex-col bg-axolotl-900 text-gray-400"><header class="w-full px-4 pt-4">
 
-        input#nav-toggle:checked~label#hide-button {
-            display: flex;
-        }
-
-        input#nav-toggle:checked~#nav-menu {
-            display: block;
-        }
-    </style>
-
-    <nav class="fixed bg-white inset-x-0 top-0 w-screen h-10 shadow flex">
-        <a href="http://example.org/" class="flex items-center text-gray-700 font-bold">
-            Andrew&#39;s Blog
+    <nav class="fixed bg-axolotl-800 text-gray-500 inset-x-0 top-0 w-screen h-10 shadow flex">
+        <a href="http://localhost/" class="flex ml-2 items-center no-underline text-gray-500 hover:text-axolotl-400 font-bold">
+            Notes to Self
         </a>
-
-        <ul id="nav-menu" class="flex items-center text-gray-700 font-bold">
+        <ul class="hidden ml-10 md:inline-flex items-center">
             
             
-            <li>
-                <a href="http://example.org/posts/" class="text-gray-500 hover:text-blue-400">Posts</a>
+            <li class="px-2 md:px-2">
+                <a href="http://localhost/posts/" class="font-semibold no-underline hover:text-axolotl-400 "> Posts </a>
+              </li>
+            
+            <li class="px-2 md:px-2">
+              <a href="" class="font-semibold no-underline hover:text-axolotl-400 "> About </a>
             </li>
-            
-        </ul>
+            <li class="px-2 md:px-2">
+              <a href="" class="font-semibold no-underline hover:text-axolotl-400 "> Contact </a>
+            </li>
+            </li>
+          </ul>
     </nav>
-</header><main class="flex-1 mx-4 md:mx-12 lg:mx-24 mt-4 sm:mt-16 w-50">
-<article class="text-gray-700 sm:mx-12">
-    <h1 class="font-bold text-3xl text-gray-700">Hello Hugo! copy</h1>
+</header><main class="flex-1 mt-8 ml-auto mr-auto">
+<main class="w-6/12 ml-auto mr-auto">
+    <h1 class="font-bold text-3xl">Hello Hugo! copy</h1>
     <p>Hello from Hugo! If you&rsquo;re reading this in your browser, good job! The file <code>content/post/hello-hugo.md</code> has been
 converted into a complete HTML document by Hugo. Isn&rsquo;t that pretty nifty?</p>
 <h2 id="a-section">A Section</h2>
@@ -55,9 +44,9 @@ converted into a complete HTML document by Hugo. Isn&rsquo;t that pretty nifty?<
 or through <a href="https://google.com/">Google</a>.</p>
 <p>There are some <em>easy</em> examples for styling, though. I can&rsquo;t <strong>emphasize</strong> that enough.
 Creating <a href="https://google.com/">links</a> or</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">isfunction</span>(p):
-    <span style="color:#75715e"># This is a function</span>
-    <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">1</span>
+<div class="highlight"><pre style="color:#d0d0d0;background-color:#202020;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#6ab825;font-weight:bold">def</span> <span style="color:#447fcf">isfunction</span>(p):
+    <span style="color:#999;font-style:italic"># This is a function</span>
+    <span style="color:#6ab825;font-weight:bold">return</span> <span style="color:#3677a9">1</span>
 </code></pre></div><table>
 <thead>
 <tr>
@@ -106,9 +95,10 @@ tags:
 <code>tags</code> sections are used in this example for indexing/grouping content. You will learn more about what that means by
 examining the code in this example and through reading the Hugo <a href="http://gohugo.io/overview/introduction">documentation</a>.</p>
 
-</article>
+</main>
 
-        </main><footer class="w-full text-center border-t border-gray-200 p-4 pin-b text-xs text-gray-400">
+        </main>
+        <footer class="bottom-0 w-full text-center p-4 pin-b text-xs text-gray-400">
     <p>&#169; 2020 Andrew White. Made with <a href="https://gohugo.io" class="underline hover:text-blue-400">Hugo</a> and <a href="https://tailwindcss.com" class="underline hover:text-blue-400">TailwindCSS</a></p>
 </footer></body>
 </html>

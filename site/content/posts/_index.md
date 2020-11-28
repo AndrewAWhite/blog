@@ -7,5 +7,3 @@ categories:
 tags:
   - "posts"
 ---
-
-Here are my latest posts.
