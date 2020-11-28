@@ -38,7 +38,7 @@ Creating [links](https://google.com/) or
 
 ### Title 3
 
-```ruby
+```python
 def isfunction(p):
     # This is a function
     # new line
