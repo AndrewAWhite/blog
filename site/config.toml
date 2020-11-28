@@ -1,4 +1,4 @@
-baseURL = "pubsubpost.com"
+baseURL = "/"
 languageCode = "en-gb"
 title = "Notes to Self"
 theme = "tailwind-theme"
