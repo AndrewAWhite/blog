@@ -47,10 +47,7 @@ def isfunction(p):
 
 blocks are very straightforward.
 
-```
-There are some *easy* examples for styling, though. I can't **emphasize** that enough.
-Creating [links](https://google.com/) or `inline code` blocks are very straightforward.
-```
+
 
 Front Matter for Fun
 --------------------
