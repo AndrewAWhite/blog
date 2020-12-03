@@ -7,6 +7,7 @@ enableRobotsTXT = true
 [taxonomies]
 year = "year"
 month = "month"
+tag = "tags"
 
 [permalinks]
 post = "/posts/:year/:month/:slug/"

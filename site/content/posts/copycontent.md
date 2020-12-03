@@ -1,5 +1,5 @@
 ---
-title: "Hello Hugo! copy copy"
+title: "Not a Blog, but example hugo"
 description: "Saying 'Hello' from Hugo again and again"
 date: "2015-09-10"
 year: "2015"
@@ -10,7 +10,6 @@ categories:
 tags:
   - "example"
   - "hugo"
-  - "blog"
 ---
 
 Hello from Hugo! If you're reading this in your browser, good job! The file `content/post/hello-hugo.md` has been

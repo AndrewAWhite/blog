@@ -1,13 +1,26 @@
 {{ define "main" }}
-<main class="w-full m-2 md:w-8/12 lg:w-6/12 md:ml-auto md:mr-auto">
+<main class="w-full m-2 pl-4 pr-5 md:w-8/12 lg:w-6/12 md:ml-auto md:mr-auto">
     <h1 class="font-bold text-3xl">{{ .Title }}</h1>
-    
+    <div class="flex mt-4 mb-4">
+        <ul>
+            {{ range (.GetTerms "tags") }}
+                <li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>
+           {{ end }}
+        </ul>
+    </div>
+
     {{ $.Content }}
-    {{with .Prev}}
-        <a href="{{.Permalink}}">Prev</a>
-    {{end}}
-    {{with .Next}}
-        <a href="{{.Permalink}}">Next</a>
-    {{end}}
+    <div class="mt-5 flex ml-auto mr-4">
+        <div class="flex-1">
+            {{with .Prev}}
+                <a class="text-xl justify-start hover:text-axolotl-200" href="{{.Permalink}}">Prev</a>
+            {{end}}
+        </div>
+        <div class="justify-end">
+            {{with .Next}}
+                <a class="text-xl justify-end hover:text-axolotl-200" href="{{.Permalink}}">Next</a>
+            {{end}}
+        </div>
+    </div>
 </main> 
 {{ end }}

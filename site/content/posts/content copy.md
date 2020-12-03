@@ -1,5 +1,5 @@
 ---
-title: "Hello Hugo! copy"
+title: "Not an example, but hugo blog"
 description: "Saying 'Hello' from Hugo again"
 date: "2014-09-10"
 year: "2014"
@@ -9,7 +9,6 @@ categories:
   - "example"
   - "hello"
 tags:
-  - "example"
   - "hugo"
   - "blog"
 ---
@@ -63,9 +62,7 @@ categories:
   - "example"
   - "hello"
 tags:
-  - "example"
   - "hugo"
-  - "blog"
 ---
 ```
 

@@ -1,13 +1,25 @@
 
 {{ define "main" }}
-<main>
-  <div>
-   <table>
-   <!-- ranges through each of the content files associated with a particular taxonomy term and renders the summary.html content view -->
-   {{ range .Pages }}
-        <tr><td><a href="{{ .Permalink }}"> {{ .Title }}</a></td></tr>
-    {{ end }}
-    </table>
-  </div>
+{{ $tag := .Params.Title }}
+<p class="ml-auto mr-auto text-4xl">{{$tag}}</p>
+<main class="w-11/12 mt-10 ml-auto mr-auto xl:w-8/12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        {{ with ($.Site.GetPage (printf "/%s" $tag)) }}
+            {{ range .Pages }}
+                <div class="bg-axolotl-800 overflow-hidden border-gray-400 m-1 p-2">
+                    <div class="m-2 text-justify text-sm">
+                        <p class="text-right text-s">{{.Date.Format "2006-01-02"}}</p>
+                        <h2 class="font-bold text-lg h-2 mb-8">{{.Title}}</h2>
+                        <p class="text-m leading-4">
+                            {{ .Summary }}                    
+                        </p>
+                    </div>
+                    <div class="w-full text-right mt-4">
+                        <a class="uppercase font-bold text-sm hover:text-white text-green-700" href="{{ .Permalink }}">Read More</a>
+                    </div>
+                </div>
+            {{ end }}
+        {{end}}
+    </div>
 </main>
 {{ end }}
